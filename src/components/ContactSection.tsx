@@ -60,8 +60,13 @@ ${formData.message}
             {[
               { icon: Phone, title: "Phone", detail: "+91 93685 85008", href: "tel:+919368585008" },
               { icon: Mail, title: "Email", detail: "akhleshprtap2019@gmail.com", href: "mailto:akhleshprtap2019@gmail.com" },
-              { icon: MapPin, title: "Address", detail: " Himachal pradesh, India", href: "#" },
-              { icon: Clock, title: "Business Hours", detail: "Mon – Sat, 9:00 AM – 6:00 PM", href: "#" },
+              {
+  icon: MapPin,
+  title: "Address",
+  detail: "Ward No.1, Bharwain Road, Dev Nagar, Una, Himachal Pradesh - 177201",
+  href: "https://www.google.com/maps/search/?api=1&query=Dev+Nagar+Una+Himachal+Pradesh+177201"
+},
+              
             ].map(({ icon: Icon, title, detail, href }) => (
               <a
                 key={title}
@@ -74,6 +79,9 @@ ${formData.message}
                 <div>
                   <h3 className="font-heading font-semibold text-foreground text-sm">{title}</h3>
                   <p className="text-muted-foreground text-sm mt-0.5">{detail}</p>
+                  <a href={href} target="_blank" className="text-blue-600 text-sm font-medium">
+  View on Google Map
+</a>
                 </div>
               </a>
             ))}
