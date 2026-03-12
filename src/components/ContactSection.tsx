@@ -69,19 +69,34 @@ ${formData.message}
               
             ].map(({ icon: Icon, title, detail, href }) => (
               <a
-                key={title}
-                href={href}
-                className="flex items-start gap-4 bg-card p-5 rounded-xl border border-border shadow-card hover:shadow-card-hover transition-all group"
-              >
+  key={title}
+  href={href}
+  // className={`flex items-start gap-4 bg-card p-5 rounded-xl border border-border shadow-card hover:shadow-card-hover transition-all group ${title === "Address" ? "min-h-[280px]" : ""}`}
+ className={`flex items-start gap-4 bg-card p-5 rounded-xl border border-border shadow-card hover:shadow-card-hover transition-all group ${title === "Address" ? "min-h-[320px]" : ""}`}
+>
                 <div className="w-11 h-11 rounded-lg bg-secondary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-secondary/20 transition-colors">
                   <Icon className="w-5 h-5 text-secondary" />
                 </div>
                 <div>
                   <h3 className="font-heading font-semibold text-foreground text-sm">{title}</h3>
                   <p className="text-muted-foreground text-sm mt-0.5">{detail}</p>
-                  <a href={href} target="_blank" className="text-blue-600 text-sm font-medium">
-  View on Google Map
+           {title === "Address" && (
+<div className="mt-auto">
+<a
+href={href}
+target="_blank"
+className="inline-block bg-green-600 text-white px-4 py-2 rounded-md text-sm hover:bg-green-700"
+>
+View on Google Map
 </a>
+
+<iframe
+src="https://maps.google.com/maps?q=Dev%20Nagar%20Una%20Himachal%20Pradesh%20177201&t=&z=13&ie=UTF8&iwloc=&output=embed"
+className="w-full h-40 rounded-lg border mt-3"
+loading="lazy"
+></iframe>
+</div>
+)}
                 </div>
               </a>
             ))}
