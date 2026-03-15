@@ -129,11 +129,7 @@ loading="lazy"
             </div>
             <div>
               <label className="block text-sm font-medium text-foreground mb-1.5">Email</label>
-              {/* <input
-                type="email"
-                className="w-full px-4 py-2.5 rounded-lg border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-                placeholder="you@example.com"
-              /> */}
+              
               <input
   type="email"
   name="email"
@@ -145,11 +141,7 @@ loading="lazy"
             </div>
             <div>
               <label className="block text-sm font-medium text-foreground mb-1.5">Message</label>
-              {/* <textarea
-                rows={4}
-                className="w-full px-4 py-2.5 rounded-lg border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring resize-none"
-                placeholder="Tell us about your requirements..."
-              /> */}
+             
               <textarea
   name="message"
   value={formData.message}

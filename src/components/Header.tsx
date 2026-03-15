@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-md border-b border-border">
+    <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-md border-b border-border relative">
       {/* Top bar */}
       <div className="bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 py-2 flex flex-wrap items-center justify-between text-sm gap-2">
@@ -23,11 +25,8 @@ const Header = () => {
         </div>
       </div>
       {/* Main nav */}
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          {/* <div className="w-10 h-10 rounded-lg bg-gradient-hero flex items-center justify-center">
-            <span className="text-primary-foreground font-heading font-bold text-lg">IP</span> 
-          </div> */}
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between">    
+            <div className="flex items-center gap-3">
           <img
   src="logo.jpeg"
   alt="Logo"
@@ -49,12 +48,50 @@ const Header = () => {
             </a>
           )}
         </nav>
+        {menuOpen && (
+<div
+className="fixed inset-0 bg-black/40 z-40"
+onClick={() => setMenuOpen(false)}
+></div>
+)}
+        <button
+  className="md:hidden text-2xl"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  ☰
+</button>
+        {menuOpen && (
+  <div
+className={`md:hidden fixed top-0 right-0 h-screen w-1/2 bg-white shadow-lg px-6 py-6 space-y-6 z-40 transform transition-transform duration-300 ${
+menuOpen ? "translate-x-0" : "translate-x-full"
+}`}
+>
+  <button
+className="text-2xl mb-4"
+onClick={() => setMenuOpen(false)}
+>
+✕
+</button>
+    <a href="/" className="block" onClick={() => setMenuOpen(false)}>Home</a>
+<a href="/products" className="block" onClick={() => setMenuOpen(false)}>Products</a>
+<a href="#about" className="block" onClick={() => setMenuOpen(false)}>About</a>
+<a href="#contact" className="block" onClick={() => setMenuOpen(false)}>Contact</a>
+<a
+href="#contact"
+className="block bg-green-600 text-green text-center py-1 rounded-lg mt-4"
+onClick={() => setMenuOpen(false)}
+>
+Get Quote
+</a>
+  </div>
+)}
         <a
           href="#contact"
           className="hidden sm:inline-flex bg-secondary text-secondary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity">
 
           Get Quote
         </a>
+       
       </div>
     </header>);
 

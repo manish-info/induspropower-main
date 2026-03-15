@@ -5,7 +5,10 @@ const Products = () => {
     <div className="min-h-screen bg-background">
 
       {/* Page Header */}
-      <div className="container mx-auto px-4 pt-20 pb-10 text-center">
+      <div className="container mx-auto px-4 pt-9 pb-0.1 text-center">
+        <h1 className="text-2xl md:text-4xl font-bold text-primary mb-8">
+INDUS PROPOWER TECHNO INDUSTRIES
+</h1>
 
         <span className="text-secondary font-semibold text-sm tracking-wider uppercase">
           Solar Products
