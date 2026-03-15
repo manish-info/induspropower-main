@@ -30,7 +30,7 @@ const Header = () => {
           <img
   src="logo.jpeg"
   alt="Logo"
-  className="h-10 w-10 object-contain rounded-lg"
+  className="h-19 w-20 object-contain rounded-lg"
 />
           <div>
             <h1 className="font-heading font-bold text-lg leading-tight text-foreground">INDUS PROPOWER</h1>
