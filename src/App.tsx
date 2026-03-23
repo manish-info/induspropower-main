@@ -5,10 +5,28 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
+function ScrollToHash() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.getElementById(location.hash.replace("#", ""));
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, [location]);
+
+  return null;
+}
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -16,7 +34,10 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
+
+  <ScrollToHash />
+
+  <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="/products" element={<Products />} />

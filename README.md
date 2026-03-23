@@ -35,6 +35,12 @@ npm run previewh
 
 
 
+**project push command**
+
+git add .
+git commit -m "website update"
+git push
+
 
 
 
