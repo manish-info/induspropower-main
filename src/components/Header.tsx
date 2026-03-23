@@ -34,7 +34,7 @@ const Header = () => {
 />
           <div>
             <h1 className="font-heading font-bold text-lg leading-tight text-foreground">INDUS PROPOWER</h1>
-            <p className="text-[10px] tracking-[0.2em] uppercase font-medium text-accent-foreground">TECHNO INDUSTRIES</p>
+            <p className="text-[15px] tracking-[0.1`em] uppercase font-medium text-accent-foreground">TECHNO INDUSTRIES</p>
           </div>
         </div>
         <nav className="hidden md:flex items-center gap-8">
