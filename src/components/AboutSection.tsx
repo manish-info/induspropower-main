@@ -19,7 +19,10 @@ const AboutSection = () => {
               Trusted Partner in <span className="text-secondary">Solar Energy</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Indus Propower Pvt. Ltd. is a leading supplier of lithium batteries for e-rickshaw,inverter,solar batteries across India. We are committed to delivering high-quality, cost-effective renewable energy solutions.
+              Indus Propower Techno Industries is a leading supplier of lithium batteries for E-rickshaw,inverter, Solar batteries for industrial use, Solar cells, Solar electric
+panels, Solar energy collectors for generating electricity, Solar-powered
+battery chargers, Solar wafers, Wafers for solar cells, Lithium-ion batteries,
+Inverters [electricity] across India. We are committed to delivering high-quality, cost-effective renewable energy solutions.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               With a comprehensive product range and deep industry expertise, we serve residential, commercial, and industrial clients — helping them transition to clean energy with confidence.

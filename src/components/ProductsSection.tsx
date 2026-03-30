@@ -11,7 +11,7 @@ const products = [
   {
   image: "/skybird.jpg",
   title: "1Kw All-in-One Inverter",
-  category: "Inverter with Lithium Battery",
+  // category: "Inverter with Lithium Battery",
   description: "Wall Mountable Inbuilt Lithium Battery Inverter, 1000 VA, 1KW all-in-one inverter with inbuilt lithium battery designed for smart home backup and solar energy usage.",
 
   features: [
@@ -30,42 +30,42 @@ const products = [
   {
     image: solarPanel,
     title: "Monocrystalline Solar Panels",
-    category: "Solar Panels",
+    // category: "Solar Panal",
     description: "High-efficiency monocrystalline panels delivering superior performance in all weather conditions.",
     features: ["540W – 600W capacity", "22%+ cell efficiency", "Anti-reflective glass coating", "25-year performance warranty"],
   },
   {
     image: lithiumBattery,
     title: "LiFePO4 Battery Packs",
-    category: "Lithium Batteries",
+    // category: "Lithium Batteries",
     description: "Long-lasting lithium iron phosphate batteries for reliable solar energy storage solutions.",
     features: ["5kWh – 20kWh options", "6000+ cycle life", "Built-in BMS protection", "10-year warranty"],
   },
   {
     image: inverter,
     title: "Solar Inverters",
-    category: "Inverters",
+    // category: "Inverters",
     description: "Advanced hybrid and on-grid inverters with smart monitoring and maximum power tracking.",
     features: ["3kW – 50kW range", "98.6% peak efficiency", "Wi-Fi monitoring", "IP65 rated enclosure"],
   },
   {
     image: mounting,
     title: "Mounting Structures",
-    category: "Accessories",
+    // category: "Accessories",
     description: "Premium aluminium and galvanized steel mounting systems for all roof types and ground installations.",
     features: ["Corrosion resistant", "Quick-lock assembly", "Wind load tested", "Adjustable tilt angle"],
   },
   {
     image: controller,
     title: "MPPT Charge Controllers",
-    category: "Controllers",
+    // category: "Controllers",
     description: "Smart MPPT charge controllers that optimize solar harvesting and battery charging efficiency.",
     features: ["30A – 100A models", "99% tracking efficiency", "LCD display", "Multi-battery support"],
   },
   {
     image: cables,
     title: "Solar Cables & Connectors",
-    category: "Accessories",
+    // category: "Accessories",
     description: "UV-resistant DC solar cables and IP67 rated MC4 connectors for secure, long-lasting connections.",
     features: ["TUV certified", "UV & weather resistant", "4mm² – 10mm² sizes", "20-year outdoor life"],
   },

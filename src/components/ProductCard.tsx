@@ -3,12 +3,12 @@ import { useState } from "react";
 interface ProductCardProps {
   image: string;
   title: string;
-  category: string;
+  // category: string;
   description: string;
   features: string[];
 }
 
-const ProductCard = ({ image, title, category, description, features }: ProductCardProps) => {
+const ProductCard = ({ image, title,  description, features }: ProductCardProps) => {
   const [showMore, setShowMore] = useState(false);
   const [openModal, setOpenModal] = useState(false);
   return (
@@ -20,9 +20,9 @@ const ProductCard = ({ image, title, category, description, features }: ProductC
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute top-3 left-3">
-          <span className="bg-secondary text-secondary-foreground text-xs font-semibold px-3 py-1 rounded-full">
+          {/* <span className="bg-secondary text-secondary-foreground text-xs font-semibold px-3 py-1 rounded-full">
             {category}
-          </span>
+          </span> */}
         </div>
       </div>
       <div className="p-5">

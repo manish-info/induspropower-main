@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-primary-foreground/10 mt-10 pt-6 text-center text-sm text-primary-foreground/50">
-          © {new Date().getFullYear()} Induspropower Pvt. Ltd. All rights reserved.
+          © {new Date().getFullYear()} Indus propower techno industries. All rights reserved.
         </div>
       </div>
     </footer>
