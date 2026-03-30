@@ -9,7 +9,7 @@ const [message, setMessage] = useState("");
 const handleSubmit = (e) => {
   e.preventDefault();
 
-  const text = `Hello, I want enquiry for ${product}
+  const text = `Hello, Indus propower.\n\nI want enquiry for ${product}
 
 Name: ${name}
 Phone: ${phone}
@@ -17,7 +17,7 @@ Email: ${email}
 
 Message: ${message}`;
 
-  const url = `https://wa.me/917070378703?text=${encodeURIComponent(text)}`;
+  const url = `https://wa.me/919368585008?text=${encodeURIComponent(text)}`;
 
   window.open(url, "_blank");
 };

@@ -46,9 +46,9 @@ const App = () => (
       </BrowserRouter>
       {/* Floating WhatsApp Button */}
      <a
-  href={`https://wa.me/917070378703
+  href={`https://wa.me/919368585008
   ?text=${encodeURIComponent(
-    "Hello Indus Propower,\n\nI am interested in solar installation.\nPlease share details.\n\nThank you."
+    "Hello Indus Propower,\n\nI am interested in solar products.\nPlease share details.\n\nThank you."
   )}`}
   target="_blank"
   rel="noopener noreferrer"

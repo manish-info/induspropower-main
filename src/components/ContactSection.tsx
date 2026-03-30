@@ -20,7 +20,7 @@ const handleSubmit = (e: any) => {
   e.preventDefault();
 
   const whatsappMessage = `
-New Solar Enquiry
+New Enquiry
 
 Name: ${formData.name}
 Phone: ${formData.phone}
@@ -31,7 +31,7 @@ ${formData.message}
 `;
 
   window.open(
-    `https://wa.me/917070378703?text=${encodeURIComponent(whatsappMessage)}`,
+    `https://wa.me/919368585008?text=${encodeURIComponent(whatsappMessage)}`,
     "_blank"
   );
 
