@@ -15,7 +15,7 @@ const Header = () => {
             </a>
             <a href="mailto:info@induspropower.com" className="flex items-center gap-1.5 hover:text-accent transition-colors">
               <Mail className="w-3.5 h-3.5" />
-              <span>support@indusecofuels.com</span>
+              <span>support@induspropower.com</span>
             </a>
           </div>
           <div className="flex items-center gap-1.5">
