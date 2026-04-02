@@ -27,6 +27,21 @@ const products = [
     "Warranty: 5 Years Battery & 2 Years Inverter"
   ]
 },
+{
+    image: lithiumBattery,
+    title: "Lithium LiFePO4 Battery For E-Rikshaw & Electric Vehicle",
+    // category: "Lithium Batteries",
+    description: "Long-lasting lithium iron phosphate batteries for reliable solar energy storage solutions.",
+    features: ["5kWh – 20kWh options", "6000+ cycle life", "Built-in BMS protection", "10-year warranty"],
+  },
+
+  {
+    image: inverter,
+    title: "3kW Grid Tie Solar Inverter",
+    // category: "Inverters",
+    description: "Advanced hybrid and on-grid inverters with smart monitoring and maximum power tracking.",
+    features: ["3kW – 50kW range", "98.6% peak efficiency", "Wi-Fi monitoring", "IP65 rated enclosure"],
+  },
   {
     image: solarPanel,
     title: "Monocrystalline Solar Panels",
@@ -34,20 +49,8 @@ const products = [
     description: "High-efficiency monocrystalline panels delivering superior performance in all weather conditions.",
     features: ["540W – 600W capacity", "22%+ cell efficiency", "Anti-reflective glass coating", "25-year performance warranty"],
   },
-  {
-    image: lithiumBattery,
-    title: "LiFePO4 Battery Packs",
-    // category: "Lithium Batteries",
-    description: "Long-lasting lithium iron phosphate batteries for reliable solar energy storage solutions.",
-    features: ["5kWh – 20kWh options", "6000+ cycle life", "Built-in BMS protection", "10-year warranty"],
-  },
-  {
-    image: inverter,
-    title: "Solar Inverters",
-    // category: "Inverters",
-    description: "Advanced hybrid and on-grid inverters with smart monitoring and maximum power tracking.",
-    features: ["3kW – 50kW range", "98.6% peak efficiency", "Wi-Fi monitoring", "IP65 rated enclosure"],
-  },
+  
+  
   {
     image: mounting,
     title: "Mounting Structures",

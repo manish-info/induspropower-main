@@ -75,6 +75,68 @@ Inverters [electricity] across India. We are committed to delivering high-qualit
           </div>
         </div>
       </div>
+      {/* Core Member Section */}
+<div className="mt-16 text-center">
+  <span className="inline-block text-secondary font-semibold text-sm tracking-wider uppercase mb-3">
+    {/* Leadership */}
+  </span>
+
+  <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-10">
+    Core Members
+  </h3>
+
+  {/* GRID */}
+  <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    
+    {/* Member 1 */}
+    <div className="bg-card rounded-xl p-6 shadow-card text-center">
+      <h4 className="font-heading text-xl font-bold text-foreground">
+        K Ganesan
+      </h4>
+
+      <p className="text-secondary font-medium text-sm mt-1">
+        Executive VP - Manufacturing (Automotive)
+      </p>
+
+      <p className="text-muted-foreground text-sm mt-1">
+        Exide Industries Ltd (Retired)
+      </p>
+
+      <p className="text-muted-foreground text-sm mt-1">
+        Director - Coslight India Telecom Pvt Ltd (Retired)
+      </p>
+
+      <div className="mt-4 space-y-2 text-sm">
+        <p>📞 9920406586</p>
+        <p>✉️ kganesan28@gmail.com</p>
+      </div>
+    </div>
+
+    {/* Member 2 */}
+    <div className="bg-card rounded-xl p-6 shadow-card text-center">
+      <h4 className="font-heading text-xl font-bold text-foreground">
+        Binay Shankar Prasad
+      </h4>
+
+      <p className="text-secondary font-medium text-sm mt-1">
+        MA - HR & Public Relations
+      </p>
+
+      <p className="text-muted-foreground text-sm mt-1">
+        VRLA & Lead Acid Battery Marketing
+      </p>
+
+      <p className="text-muted-foreground text-sm mt-1">
+        25+ Years Experience
+      </p>
+
+      <div className="mt-4 space-y-2 text-sm">
+        <p>📞 9625828253</p>
+      </div>
+    </div>
+
+  </div>
+</div>
     </section>
   );
 };
