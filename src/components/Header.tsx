@@ -13,10 +13,10 @@ const Header = () => {
               <Phone className="w-3.5 h-3.5" />
               <span>+91 9368585008</span>
             </a>
-            <a href="mailto:info@induspropower.com" className="flex items-center gap-1.5 hover:text-accent transition-colors">
+            {/* <a href="mailto:info@induspropower.com" className="flex items-center gap-1.5 hover:text-accent transition-colors">
               <Mail className="w-3.5 h-3.5" />
               <span>support@induspropower.com</span>
-            </a>
+            </a> */}
           </div>
           <div className="flex items-center gap-1.5">
             <MapPin className="w-3.5 h-3.5" />
