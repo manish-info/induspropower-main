@@ -90,6 +90,14 @@ Inverters [electricity] across India. We are committed to delivering high-qualit
     
     {/* Member 1 */}
     <div className="bg-card rounded-xl p-6 shadow-card text-center">
+      <Avatar className="w-28 h-28 border-primary shadow-lg mx-auto block">
+  <AvatarImage 
+    src="/member1.jpeg" 
+    alt="K Ganesanh"
+    className="object-cover"
+  />
+  <AvatarFallback>KG</AvatarFallback>
+</Avatar>
       <h4 className="font-heading text-xl font-bold text-foreground">
         K Ganesan
       </h4>
@@ -114,12 +122,21 @@ Inverters [electricity] across India. We are committed to delivering high-qualit
 
     {/* Member 2 */}
     <div className="bg-card rounded-xl p-6 shadow-card text-center">
+      <Avatar className="w-28 h-28 border-primary shadow-lg mx-auto block">
+  <AvatarImage 
+    src="/member2.jpeg" 
+    alt="Binay Shankar Prasad"
+    className="object-cover"
+  />
+  <AvatarFallback>BSP</AvatarFallback>
+</Avatar>
       <h4 className="font-heading text-xl font-bold text-foreground">
         Binay Shankar Prasad
       </h4>
 
       <p className="text-secondary font-medium text-sm mt-1">
-        MA - HR & Public Relations
+        {/* MA - HR & Public Relations */}
+        Sales & Marketing Head
       </p>
 
       <p className="text-muted-foreground text-sm mt-1">
